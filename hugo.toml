@@ -32,10 +32,12 @@ theme = 'learn'
 
 # --- DỮ LIỆU CHO FOOTER TÙY CHỈNH ---
 [params.footer]
-  workshopID = "000232263"
-  cloudjourneyID = "004818404"
   lastUpdated = "10-08-2025"
   team = [
     { name = "Gia Hưng", color = "#F8991D" },
     { name = "Hoàng Kha", color = "#F8991D" }
   ]
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
