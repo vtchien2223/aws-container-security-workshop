@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = "https://vtchien2223.github.io/aws-container-security-workshop/"
 languageCode = 'vi-vn'
 title = 'Tài Liệu Của Tôi'
 theme = 'learn'
@@ -6,8 +6,6 @@ theme = 'learn'
 [params]
   # Đặt màu chủ đạo cho theme, màu xanh giống AWS
   themeVariant = "aws"
-  # Hiển thị nút "Edit this page"
-  editURL = "https://example.com/edit/this/page"
   # Thêm mô tả cho trang
   description = "Hướng dẫn triển khai ứng dụng an toàn"
   # Tên tác giả
