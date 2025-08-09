@@ -1,0 +1,43 @@
+baseURL = 'http://example.org/'
+languageCode = 'vi-vn'
+title = 'Tài Liệu Của Tôi'
+theme = 'learn'
+
+[params]
+  # Đặt màu chủ đạo cho theme, màu xanh giống AWS
+  themeVariant = "aws"
+  # Hiển thị nút "Edit this page"
+  editURL = "https://example.com/edit/this/page"
+  # Thêm mô tả cho trang
+  description = "Hướng dẫn triển khai ứng dụng an toàn"
+  # Tên tác giả
+  author = "Tên của bạn"
+  # Hiển thị nút copy code
+  showVisitedLinks = true
+  # Ẩn các nút điều hướng trang trước/sau ở cuối trang
+  disableNextPrev = false
+  # Thêm file css tùy chỉnh
+  custom_css = ["css/custom.css"]
+  # Đường dẫn đến logo mới
+  logo = "images/logo-aws.png"
+# --- MENU CHO PHẦN MORE ---
+[[menu.more]]
+  name = "AWS Study Group - Blog"
+  url = "https://awsstudygroup.com/blog/"
+  weight = 10
+  pre = "fab fa-aws" # Icon
+[[menu.more]]
+  name = "AWS Study Group - Nhóm FB"
+  url = "https://www.facebook.com/groups/awsstudygroupfcj/"
+  weight = 20
+  pre = "fab fa-facebook-square" # Icon
+
+# --- DỮ LIỆU CHO FOOTER TÙY CHỈNH ---
+[params.footer]
+  workshopID = "000232263"
+  cloudjourneyID = "004818404"
+  lastUpdated = "10-08-2025"
+  team = [
+    { name = "Gia Hưng", color = "#F8991D" },
+    { name = "Hoàng Kha", color = "#F8991D" }
+  ]

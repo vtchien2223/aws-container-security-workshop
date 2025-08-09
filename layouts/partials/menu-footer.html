@@ -1,0 +1,19 @@
+<div class="custom-footer-container">
+    <ul class="custom-footer-links">
+        {{- range .Site.Menus.more }}
+        <li>
+            <a href="{{ .URL | relURL }}" target="_blank"><i class="{{ .Pre }}"></i> {{ .Name }}</a>
+        </li>
+        {{- end }}
+    </ul>
+    <div class="custom-footer-info">
+        <p><strong>Last Updated</strong><br>
+        {{ .Site.Params.footer.lastUpdated }}</p>
+
+        <p><strong>Team</strong><br>
+        {{ range .Site.Params.footer.team }}
+            <span>{{ .name }}</span><br>
+        {{ end }}
+        </p>
+    </div>
+</div>

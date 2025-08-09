@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.148.2">
+    <meta name="description" content="Hướng dẫn triển khai ứng dụng an toàn">
+<meta name="author" content="Tên của bạn">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>1.1 Chuẩn bị Mã nguồn :: Tài Liệu Của Tôi</title>
+
+    
+    <link href="/css/nucleus.css?1754762223" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1754762223" rel="stylesheet">
+    <link href="/css/hybrid.css?1754762223" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1754762223" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1754762223" rel="stylesheet">
+    <link href="/css/auto-complete.css?1754762223" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1754762223" rel="stylesheet">
+    <link href="/css/theme.css?1754762223" rel="stylesheet">
+    <link href="/css/tabs.css?1754762223" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1754762223" rel="stylesheet">
+    
+    <link href="/css/theme-aws.css?1754762223" rel="stylesheet">
+    
+    <link href="/css/custom.css?1754762223" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1754762223"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/chuan-bi/chuan-bi-ung-dung/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href='/'>
+  <img src="/images/logo-aws.png" alt="Tài Liệu Của Tôi">
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1754762223"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1754762223"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1754762223"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chuan-bi/" title="1.Chuẩn bị" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/chuan-bi/">
+          1.Chuẩn bị
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chuan-bi/chuan-bi-ung-dung/" title="1.1 Chuẩn bị Mã nguồn" class="dd-item
+        
+        active
+        
+        ">
+      <a href="/chuan-bi/chuan-bi-ung-dung/">
+          1.1 Chuẩn bị Mã nguồn
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chuan-bi/giai-thich-ma-nguon/" title="1.2 Giải Thích Mã nguồn" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chuan-bi/giai-thich-ma-nguon/">
+          1.2 Giải Thích Mã nguồn
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chuan-bi/vpc-sg/" title="1.3 Chuẩn bị Mạng (VPC &amp; Security Group)" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chuan-bi/vpc-sg/">
+          1.3 Chuẩn bị Mạng (VPC &amp; Security Group)
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xay-dung-pipeline/" title="2.Xây dựng Pipeline CI &amp; Quét an ninh" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xay-dung-pipeline/">
+          2.Xây dựng Pipeline CI &amp; Quét an ninh
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xay-dung-pipeline/ecr/" title="2.1 Tạo ECR Repository" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xay-dung-pipeline/ecr/">
+          2.1 Tạo ECR Repository
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xay-dung-pipeline/codepipeline/" title="2.2 Xây dựng Pipeline" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xay-dung-pipeline/codepipeline/">
+          2.2 Xây dựng Pipeline
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/xay-dung-pipeline/securitycheck/" title="2.3 Tạo Cổng An ninh" class="dd-item
+        
+        
+        
+        ">
+      <a href="/xay-dung-pipeline/securitycheck/">
+          2.3 Tạo Cổng An ninh
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/trien-khai-ung-dung/" title="3.Triển khai ứng dụng" class="dd-item
+        
+        
+        
+        ">
+      <a href="/trien-khai-ung-dung/">
+          3.Triển khai ứng dụng
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/trien-khai-ung-dung/ecs-cluster/" title="3.1 Tạo ECS Cluster" class="dd-item
+        
+        
+        
+        ">
+      <a href="/trien-khai-ung-dung/ecs-cluster/">
+          3.1 Tạo ECS Cluster
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/trien-khai-ung-dung/task-definition/" title="3.2 Tạo Task Definition" class="dd-item
+        
+        
+        
+        ">
+      <a href="/trien-khai-ung-dung/task-definition/">
+          3.2 Tạo Task Definition
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/trien-khai-ung-dung/ecs-service/" title="3.3 Tạo ECS Service &amp; Chạy ứng dụng" class="dd-item
+        
+        
+        
+        ">
+      <a href="/trien-khai-ung-dung/ecs-service/">
+          3.3 Tạo ECS Service &amp; Chạy ứng dụng
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/giam-sat-khac-phuc/" title="4.Giám sát &amp; Tự động Khắc phục" class="dd-item
+        
+        
+        
+        ">
+      <a href="/giam-sat-khac-phuc/">
+          4.Giám sát &amp; Tự động Khắc phục
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/giam-sat-khac-phuc/monitoring/" title="4.1 Giám sát An ninh &amp; Tuân thủ" class="dd-item
+        
+        
+        
+        ">
+      <a href="/giam-sat-khac-phuc/monitoring/">
+          4.1 Giám sát An ninh &amp; Tuân thủ
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/giam-sat-khac-phuc/remediation/" title="4.2 Tự động Khắc phục sự cố" class="dd-item
+        
+        
+        
+        ">
+      <a href="/giam-sat-khac-phuc/remediation/">
+          4.2 Tự động Khắc phục sự cố
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/don-dep/" title="5.Dọn dẹp Tài nguyên" class="dd-item
+        
+        
+        
+        ">
+      <a href="/don-dep/">
+          5.Dọn dẹp Tài nguyên
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chi-phi/" title="Phụ lục: Ước tính Chi phí" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chi-phi/">
+          Phụ lục: Ước tính Chi phí
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <div class="custom-footer-container">
+    <ul class="custom-footer-links">
+        <li>
+            <a href="https://awsstudygroup.com/blog/" target="_blank"><i class="fab fa-aws"></i> AWS Study Group - Blog</a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/groups/awsstudygroupfcj/" target="_blank"><i class="fab fa-facebook-square"></i> AWS Study Group - Nhóm FB</a>
+        </li>
+    </ul>
+    <div class="custom-footer-info">
+        <p><strong>Last Updated</strong><br>
+        10-08-2025</p>
+
+        <p><strong>Team</strong><br>
+        
+            <span>Gia Hưng</span><br>
+        
+            <span>Hoàng Kha</span><br>
+        
+        </p>
+    </div>
+</div>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://example.com/edit/this/pagechuan-bi/chuan-bi-ung-dung/_index.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Giới thiệu Workshop</a> > <a href='/chuan-bi/'>1.Chuẩn bị</a> > 1.1 Chuẩn bị Mã nguồn
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#bước-1-tạo-một-repository-mới-trên-github">Bước 1: Tạo một Repository mới trên GitHub</a></li>
+        <li><a href="#bước-2-clone-repository-mẫu-về-máy-tính">Bước 2: Clone Repository mẫu về máy tính</a></li>
+        <li><a href="#bước-3-đẩy-mã-nguồn-lên-repository-mới-của-bạn">Bước 3: Đẩy mã nguồn lên Repository mới của bạn</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              1.1 Chuẩn bị Mã nguồn
+            </h1>
+          
+
+        
+
+
+
+	<p>Trong phần này, chúng ta sẽ chuẩn bị mã nguồn ban đầu cho workshop. Thay vì viết code từ đầu, bạn sẽ sao chép (clone) một dự án mẫu đã được chuẩn bị sẵn, sau đó đẩy nó lên repository GitHub của chính bạn để bắt đầu làm việc.</p>
+<h3 id="bước-1-tạo-một-repository-mới-trên-github">Bước 1: Tạo một Repository mới trên GitHub</h3>
+
+<div class="notices info" ><p>Mỗi người tham gia cần có một repository riêng để CodePipeline có thể kết nối và theo dõi các thay đổi.</p>
+</div>
+
+<ol>
+<li>Truy cập vào tài khoản GitHub của bạn.</li>
+<li>Nhấn vào dấu <strong><code>+</code></strong> ở góc trên bên phải, sau đó chọn <strong><code>New repository</code></strong>.</li>
+<li><strong>Repository name</strong>: Đặt một tên bất kỳ, ví dụ: <code>my-container-security-app</code>.</li>
+<li>Để repository ở chế độ <strong>Public</strong>.</li>
+<li>Nhấn <strong>Create repository</strong>.</li>
+</ol>
+<h3 id="bước-2-clone-repository-mẫu-về-máy-tính">Bước 2: Clone Repository mẫu về máy tính</h3>
+
+<div class="notices info" ><p>Chúng ta sẽ sao chép toàn bộ mã nguồn và các file cấu hình đã được chuẩn bị sẵn từ một repository mẫu.</p>
+</div>
+
+<ol>
+<li>Mở một cửa sổ terminal hoặc PowerShell trên máy tính của bạn.</li>
+<li>Chạy lệnh <code>git clone</code> sau để tải mã nguồn mẫu về:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/vtchien2223/demo-app.git
+</span></span></code></pre></div></li>
+<li>Sau khi lệnh chạy xong, một thư mục mới có tên <code>demo-app</code> sẽ xuất hiện. Hãy di chuyển vào thư mục đó:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd demo-app
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="bước-3-đẩy-mã-nguồn-lên-repository-mới-của-bạn">Bước 3: Đẩy mã nguồn lên Repository mới của bạn</h3>
+
+<div class="notices info" ><p>Bây giờ, chúng ta sẽ kết nối thư mục mã nguồn ở máy bạn với repository mới bạn vừa tạo trên GitHub và đẩy code lên đó.</p>
+</div>
+
+<ol>
+<li>Trong terminal, chạy lệnh sau để thay đổi &ldquo;địa chỉ&rdquo; remote từ repo mẫu thành repo của bạn.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote set-url origin &lt;URL_repo_moi_cua_ban&gt;
+</span></span></code></pre></div><em>Ví dụ:</em>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote set-url origin https://github.com/abc/my-container-security-app.git
+</span></span></code></pre></div></li>
+<li>Cuối cùng, đẩy toàn bộ mã nguồn lên repository mới của bạn:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push -u origin main
+</span></span></code></pre></div></li>
+</ol>
+<p>Bây giờ, bạn đã có một bản sao của dự án trên repository GitHub của riêng mình và sẵn sàng để bắt đầu workshop.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/chuan-bi/" title="1.Chuẩn bị"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/chuan-bi/giai-thich-ma-nguon/" title="1.2 Giải Thích Mã nguồn" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1754762223"></script>
+    <script src="/js/perfect-scrollbar.min.js?1754762223"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1754762223"></script>
+    <script src="/js/jquery.sticky.js?1754762223"></script>
+    <script src="/js/featherlight.min.js?1754762223"></script>
+    <script src="/js/highlight.pack.js?1754762223"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1754762223"></script>
+    <script src="/js/learn.js?1754762223"></script>
+    <script src="/js/hugo-learn.js?1754762223"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1754762223"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
