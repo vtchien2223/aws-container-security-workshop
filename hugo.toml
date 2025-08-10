@@ -1,4 +1,4 @@
-baseURL = "https://vtchien2223.github.io/aws-container-security-workshop/"
+baseURL = "https://vtchien2223.github.io/"
 languageCode = 'vi-vn'
 title = 'Tài Liệu Của Tôi'
 theme = 'learn'
