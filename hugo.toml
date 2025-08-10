@@ -31,6 +31,10 @@ theme = 'learn'
   url = "https://www.facebook.com/groups/awsstudygroupfcj/"
   weight = 20
   pre = "fab fa-facebook-square" # Icon
+[[menu.more]]
+  name = "Cloud Journey"
+  url = "https://cloudjourney.awsstudygroup.com/"
+  weight = 20
 
 # --- DỮ LIỆU CHO FOOTER TÙY CHỈNH ---
 [params.footer]
