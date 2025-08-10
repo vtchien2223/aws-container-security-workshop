@@ -18,6 +18,8 @@ theme = 'learn'
   custom_css = ["css/custom.css"]
   # Đường dẫn đến logo mới
   logo = "images/logo-aws.png"
+  # Ẩn nút Home
+  disableHomeIcon = true
 # --- MENU CHO PHẦN MORE ---
 [[menu.more]]
   name = "AWS Study Group - Blog"
@@ -37,7 +39,4 @@ theme = 'learn'
     { name = "Gia Hưng", color = "#F8991D" },
     { name = "Hoàng Kha", color = "#F8991D" }
   ]
-[[menu.main]]
-  name = "Home"
-  url = "/"
-  weight = 1
+
