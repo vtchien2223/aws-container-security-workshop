@@ -2,7 +2,7 @@
 title: "Giới thiệu Workshop"
 ---
 
-## Tổng quan
+## Tổng quan Xây dựng Container Security Pipeline trên AWS
 {{% notice info %}}
 Trong trang này, chúng ta sẽ tìm hiểu về mục tiêu của workshop **Xây dựng Container Security Pipeline trên AWS**, cách thức hoạt động và các thành phần quan trọng sẽ được sử dụng.
 {{% /notice %}}
