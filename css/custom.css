@@ -70,3 +70,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 17.6px !important;
     color: var(--body-font-color, #222) !important;
 }
+#sidebar #homelinks {
+    display: none !important;
+}
